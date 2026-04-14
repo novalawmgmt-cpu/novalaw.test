@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body { background-color: #f4f6f8; font-family: 'Pretendard', sans-serif; color: #333; }
+        .bg-navy { background-color: #1a2a44; }
+        .text-navy { color: #1a2a44; }
+        .border-gold { border-color: #d4af37; }
+        .bg-gold { background-color: #d4af37; }
+        .text-gold { color: #d4af37; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e5e7eb; }
+        .step-number { width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header class="bg-navy text-white py-12 px-6 shadow-md">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">민사 소송 승소 후 강제집행 안내</h1>
+            <p class="text-gray-300 text-sm md:text-base">판결문은 끝이 아닌 시작입니다. 의뢰인님의 정당한 권리를 되찾기 위한 절차를 안내해 드립니다.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto p-6 my-8 space-y-12">
+
+        <div class="bg-yellow-50 border-l-4 border-gold p-6 rounded-r-lg">
+            <h2 class="text-lg font-bold text-yellow-800 mb-2">💡 집행 전 필수 확인</h2>
+            <p class="text-sm text-yellow-700">성공적인 강제집행을 위해서는 채무자의 재산을 신속하고 정확하게 파악하는 것이 핵심입니다. 아래의 준비 단계를 거쳐 상황에 맞는 집행 방법을 선택하시기 바랍니다.</p>
+        </div>
+
+        <section>
+            <h2 class="text-2xl font-bold text-navy border-b-2 border-gold pb-3 mb-6 flex items-center gap-2">
+                <span class="bg-navy text-white step-number">1</span> 준비 단계 : 재산 파악 및 집행권원 확보
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="card p-6 border-t-4 border-t-navy">
+                    <h3 class="font-bold text-lg mb-3">가. 집행권원 확보</h3>
+                    <p class="text-xs text-gray-500 mb-4">강제집행을 위해 법원에서 확인받는 기초 서류입니다.</p>
+                    <ul class="text-sm space-y-2">
+                        <li><span class="font-semibold text-navy">대상:</span> 확정판결, 화해조서, 이행/화해권고결정, 지급명령, 공정증서 등</li>
+                        <li><span class="font-semibold text-navy">필수 발급:</span> 집행문, 송달증명원, 확정증명원</li>
+                    </ul>
+                </div>
+
+                <div class="card p-6 border-t-4 border-t-navy">
+                    <h3 class="font-bold text-lg mb-3">나. 재산명시신청</h3>
+                    <p class="text-xs text-gray-500 mb-4">채무자 스스로 재산목록을 제출하게 하는 절차입니다.</p>
+                    <ul class="text-sm space-y-2">
+                        <li><span class="font-semibold text-navy">방법:</span> 채무자 주소지 관할법원에 신청서 제출</li>
+                        <li><span class="font-semibold text-navy">필요 서류:</span> 신청서, 집행권원 정본/집행문, 송달/확정증명원</li>
+                    </ul>
+                </div>
+
+                <div class="card p-6 border-t-4 border-t-navy">
+                    <h3 class="font-bold text-lg mb-3">다. 재산조회</h3>
+                    <p class="text-xs text-gray-500 mb-4">법원이 공공·금융기관 전산망을 통해 직접 조회합니다.</p>
+                    <ul class="text-sm space-y-2">
+                        <li><span class="font-semibold text-navy">요건:</span> 재산명시 송달불능, 재산 부족, 명의의무 위반 시</li>
+                        <li><span class="font-semibold text-navy">방법:</span> 조회 기관 특정하여 신청 (비용 선납)</li>
+                        <li><span class="font-semibold text-navy">필요 서류:</span> 신청서, 재산명시결정문 사본, 납부 영수증</li>
+                    </ul>
+                </div>
+
+                <div class="card p-6 border-t-4 border-t-navy">
+                    <h3 class="font-bold text-lg mb-3">라. 채무불이행자명부 등재</h3>
+                    <p class="text-xs text-gray-500 mb-4">채무자에게 신용제재를 가해 심리적 압박을 줍니다.</p>
+                    <ul class="text-sm space-y-2">
+                        <li><span class="font-semibold text-navy">요건:</span> 확정 후 6개월 내 미이행, 재산명시 의무 위반</li>
+                        <li><span class="font-semibold text-navy">방법:</span> 관할 법원에 사유 소명하여 신청</li>
+                        <li><span class="font-semibold text-navy">필요 서류:</span> 신청서, 집행 서류 일체, 채무 미변제 소명자료</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-navy border-b-2 border-gold pb-3 mb-6 flex items-center gap-2">
+                <span class="bg-navy text-white step-number">2</span> 목적물별 강제집행 절차
+            </h2>
+            <div class="space-y-6">
+
+                <div class="card flex flex-col md:flex-row overflow-hidden">
+                    <div class="bg-gray-100 p-6 md:w-1/3 flex flex-col justify-center border-r border-gray-200">
+                        <span class="text-xs font-bold text-gold tracking-wider mb-1">REAL ESTATE</span>
+                        <h3 class="font-bold text-xl text-navy">부동산 강제집행<br><span class="text-base font-normal">(강제경매)</span></h3>
+                    </div>
+                    <div class="p-6 md:w-2/3 text-sm">
+                        <div class="mb-4">
+                            <span class="inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-semibold mr-2">신청 기관</span> 부동산 소재지 관할 지방법원<br>
+                            <span class="inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-semibold mt-2 mr-2">신청 방법</span> 방문 또는 전자소송으로 '강제경매신청서' 제출
+                        </div>
+                        <p class="font-semibold mb-2">📄 필요 서류</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4 space-y-1">
+                            <li>강제경매신청서 (채권자/채무자, 부동산 표시, 경매 이유 기재)</li>
+                            <li>집행권원 및 집행문, 송달증명원 및 확정증명원</li>
+                            <li>채무자 명의의 부동산등기사항전부증명서, 채권계산서</li>
+                        </ul>
+                        <div class="bg-gray-50 p-3 rounded border border-gray-200 text-xs">
+                            <strong class="text-navy">진행 과정:</strong> 신청 ➔ 경매개시결정 및 압류 ➔ 현황조사/감정평가 ➔ 배당요구 ➔ 매각 ➔ 배당금 지급/소유권 이전
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex flex-col md:flex-row overflow-hidden">
+                    <div class="bg-gray-100 p-6 md:w-1/3 flex flex-col justify-center border-r border-gray-200">
+                        <span class="text-xs font-bold text-gold tracking-wider mb-1">MOVABLES</span>
+                        <h3 class="font-bold text-xl text-navy">동산 강제집행<br><span class="text-base font-normal">(유체동산)</span></h3>
+                    </div>
+                    <div class="p-6 md:w-2/3 text-sm">
+                        <div class="mb-4">
+                            <span class="inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-semibold mr-2">신청 기관</span> 집행관사무소 (집행목적물 소재 지방법원 소속)<br>
+                            <span class="inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-semibold mt-2 mr-2">신청 방법</span> 유체동산 압류 신청서 방문 제출
+                        </div>
+                        <p class="font-semibold mb-2">📄 필요 서류</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4 space-y-1">
+                            <li>유체동산 압류 신청서 (집행 장소 특정 필수)</li>
+                            <li>집행권원 및 집행문, 송달증명원 및 확정증명원</li>
+                        </ul>
+                        <div class="bg-gray-50 p-3 rounded border border-gray-200 text-xs">
+                            <strong class="text-navy">진행 과정:</strong> 신청 ➔ 집행관 현장 압류 ➔ 매각 ➔ 배당금 지급
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card flex flex-col md:flex-row overflow-hidden">
+                    <div class="bg-gray-100 p-6 md:w-1/3 flex flex-col justify-center border-r border-gray-200">
+                        <span class="text-xs font-bold text-gold tracking-wider mb-1">MONETARY CLAIM</span>
+                        <h3 class="font-bold text-xl text-navy">금전채권 강제집행<br><span class="text-base font-normal">(채권압류)</span></h3>
+                    </div>
+                    <div class="p-6 md:w-2/3 text-sm">
+                        <div class="mb-4">
+                            <span class="inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-semibold mr-2">신청 기관</span> 채무자 주소지 관할 지방법원<br>
+                            <span class="inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-semibold mt-2 mr-2">신청 방법</span> 채권압류 및 추심(전부)명령 신청서 방문/전자소송 제출
+                        </div>
+                        <p class="font-semibold mb-2">📄 필요 서류</p>
+                        <ul class="list-disc pl-5 text-gray-600 mb-4 space-y-1">
+                            <li>채권압류 및 추심(전부)명령 신청서 (채권 종류/액수 특정)</li>
+                            <li>집행권원 및 집행문, 송달/확정증명원, 채권계산서</li>
+                            <li><span class="font-semibold">제3채무자 소명자료:</span> [예금] 거래은행 및 지점 특정 / [급여] 재직증명서, 급여명세서 등</li>
+                        </ul>
+                        <div class="bg-gray-50 p-3 rounded border border-gray-200 text-xs">
+                            <strong class="text-navy">진행 과정:</strong> 신청 ➔ 압류명령 ➔ 추심명령 또는 전부명령 ➔ 현금화
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-navy text-white text-center py-10 mt-12">
+        <div class="max-w-3xl mx-auto px-6">
+            <h3 class="text-xl font-bold mb-4 border-b border-gray-600 pb-4 inline-block">법률 상담 안내</h3>
+            <p class="text-sm text-gray-300 mb-6">복잡한 강제집행 절차, 법무법인에서 현실적인 해법을 제시합니다.</p>
+            <div class="flex justify-center gap-4">
+                <button class="bg-gold text-navy font-bold py-2 px-6 rounded shadow hover:bg-yellow-500 transition">📞 전화 상담</button>
+                <button class="border border-white text-white font-bold py-2 px-6 rounded hover:bg-white hover:text-navy transition">🌐 공식 홈페이지</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
